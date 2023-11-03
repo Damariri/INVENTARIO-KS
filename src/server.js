@@ -15,7 +15,7 @@ const dbOptions = {
 
 
 //Conexion a la Base de Datos
-app.use(myConnection(mysql, dbOptions, 'single')); // añadido FUKA SE DECLARA LA BASE DE DATOS UNA SOLA VEZ EN TODO EL PROYECTO Y SE LLAMA COMO LO HICE EN INDEXCONTROLLER
+app.use(myConnection(mysql, dbOptions, 'single')); // SE DECLARA LA BASE DE DATOS UNA SOLA VEZ EN TODO EL PROYECTO Y SE LLAMA COMO LO HICE EN INDEXCONTROLLER
 
 
 /*const conexion = mysql.createConnection(dbOptions);
