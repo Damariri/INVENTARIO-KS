@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inventario Kronos School</title>
+    <link rel="icon" href="img/logok.ico">
+
+    <!--datatable-->
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.bootstrap5.min.css" rel="stylesheet">
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_local/indexStyle.css">
+</head>
+<body id="body">
+    
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fa-solid fa-school"></i>
+            <h4>Kronos School</h4>
+        </div>
+
+        <div class="options__menu">	
+            <div class="menu">
+
+                <div class="option">
+                    <a href="#" class="selected"><i class="fa-solid fa-table-cells-large" title="Inicio"></i>Inicio</a>
+                </div>
+            
+            <div class="option">
+                <a class="sub-btn" id="salasBtn"><i class="fa-solid fa-network-wired" title="Salas"></i>Salas<i class="fas fa-angle-right dropdown" id="salasIcon"></i>
+
+                    <div class="sub-menu">
+                        <a href="#" title="Kinder A" class="sub-item">Kinder A</a>
+                        <a href="#" title="Kinder B" class="sub-item">Kinder B</a>
+                        <a href="#" title="1° Básico A" class="sub-item">1° Básico A</a>
+                        <a href="#" title="1° Básico B" class="sub-item">1° Básico B</a>
+                        <a href="#" title="2° Básico A" class="sub-item">2° Básico A</a>
+                        <a href="#" title="2° Básico B" class="sub-item">2° Básico B</a>
+                        <a href="#" title="3° Básico A" class="sub-item">3° Básico A</a>
+                        <a href="#" title="3° Básico B" class="sub-item">3° Básico B</a>
+                        <a href="#" title="4° Básico A" class="sub-item">4° Básico A</a>
+                        <a href="#" title="4° Básico B" class="sub-item">4° Básico B</a>
+                        <a href="#" title="5° Básico A" class="sub-item">5° Básico A</a>
+                        <a href="#" title="5° Básico B" class="sub-item">5° Básico B</a>
+                        <a href="#" title="6° Básico A" class="sub-item">6° Básico A</a>
+                        <a href="#" title="6° Básico B" class="sub-item">6° Básico B</a>
+                        <a href="#" title="7° Básico A" class="sub-item">7° Básico A</a>
+                        <a href="#" title="7° Básico B" class="sub-item">7° Básico B</a>
+                        <a href="#" title="8° Básico" class="sub-item">8° Básico</a>
+                        <a href="#" title="1° Medio A" class="sub-item">1° Medio A</a>
+                        <a href="#" title="1° Medio B" class="sub-item">1° Medio B</a>
+                        <a href="#" title="2° Medio A" class="sub-item">2° Medio A</a>
+                        <a href="#" title="2° Medio B" class="sub-item">2° Medio B</a>
+                        <a href="#" title="3° Administración" class="sub-item">3° Administración</a>
+                        <a href="#" title="4° Administración" class="sub-item">4° Administración</a>
+                        <a href="#" title="3° Programación" class="sub-item">3° Programación</a>
+                        <a href="#" title="4° Programación" class="sub-item">4° Programación</a>
+                        <a href="#" title="Taller Administración" class="sub-item">Taller Administración</a>
+                        <a href="#" title="Sala de Música" class="sub-item">Sala de Música</a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="option">
+                <a class="sub-btn"><i class="fa-solid fa-network-wired" title="Oficinas"></i>Oficinas<i class="fas fa-angle-right dropdown"></i>
+                    <div class="sub-menu">
+                        <a href="#" title="PIE Sala Sensorial" class="sub-item">PIE Sala Sensorial</a>
+                        <a href="#" title="PIE Apoyo a Estudiantes (Oficina 2)" class="sub-item">PIE Apoyo a Estudiantes (Oficina 2)</a>
+                        <a href="#" title="PIE Apoyo a Estudiantes Sordos" class="sub-item">PIE Apoyo a Estudiantes Sordos</a>
+                        <a href="#" title="PIE Apoyo a Estudiantes (Oficina 2)" class="sub-item">PIE Apoyo a Estudiantes (Oficina 2)</a>
+                        <a href="#" title="Fonoaudiólogo" class="sub-item">Fonoaudiólogo</a>
+                        <a href="#" title="Informática" class="sub-item">Informática</a>
+                        <a href="#" title="Orientador Vocacional" class="sub-item">Orientador Vocacional</a>
+                        <a href="#" title="Trabajadora Social" class="sub-item">Trabajadora Social</a>
+                        <a href="#" title="UTP Básica" class="sub-item">UTP Básica</a>
+                        <a href="#" title="UTP Media" class="sub-item">UTP Media</a>
+                        <a href="#" title="Coordinadora PIE" class="sub-item">Coordinadora PIE</a>
+                        <a href="#" title="Encargado de Vinculación y Producción con el Medio" class="sub-item">Encargado de Vinculación y Producción con el Medio</a>
+                        <a href="#" title="Extraescolar" class="sub-item">Extraescolar</a>
+                        <a href="#" title="Enfermería" class="sub-item">Enfermería</a>
+                        <a href="#" title="Secretaria UTP" class="sub-item">Secretaria UTP</a>
+                        <a href="#" title="Logística" class="sub-item">Logística</a>
+                        <a href="#" title="Impectoria General" class="sub-item">Impectoria General</a>
+                        <a href="#" title="Encargada de Matricula" class="sub-item">Encargada de Matricula</a>
+                        <a href="#" title="Biblioteca (CRA)" class="sub-item">Biblioteca (CRA)</a>
+                        <a href="#" title="Convivencia Escolar" class="sub-item">Convivencia Escolar</a>
+                        <a href="#" title="Psicologa Básica (Oficina 1)" class="sub-item">Psicologa Básica (Oficina 1)</a>
+                        <a href="#" title="Psicologa Básica (Oficina 2)" class="sub-item">Psicologa Básica (Oficina 2)</a>
+                        <a href="#" title="Psicologa Media (Oficina 1)" class="sub-item">Psicologa Media (Oficina 1)</a>
+                        <a href="#" title="Psicologa Media (Oficina 2)" class="sub-item">Psicologa Media (Oficina 2)</a>
+                        <a href="#" title="Recursos Humanos" class="sub-item">Recursos Humanos</a>
+                        <a href="#" title="Contador" class="sub-item">Contador</a>
+                        <a href="#" title="Secretaria" class="sub-item">Secretaria</a>
+                        <a href="#" title="Sostenedora" class="sub-item">Sostenedora</a>
+                        <a href="#" title="Director" class="sub-item">Director</a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="option">
+                <a class="sub-btn" id="salasBtn"><i class="fa-solid fa-computer" title="Laboratorios"></i></i>Laboratorios<i class="fas fa-angle-right dropdown" id="salasIcon"></i>
+
+                    <div class="sub-menu">
+                        <a href="#" title="Lab Básica" class="sub-item">Lab Básica</a>
+                        <a href="#" title="Lab Media" class="sub-item">Lab Media</a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="option">
+                <a href="#"><i class="fa-solid fa-laptop" title="Equipos"></i>Equipos</a>
+            </div>
+
+            <div class="option">
+                <a href="#"><i class="fa-solid fa-chart-simple" title="Estadisticas"></i>Estadísticas</a>
+            </div>
+
+            <div class="option">
+                <a href="#"><i class="fa-solid fa-right-from-bracket" id="log_out" title="Salir"></i>Cerrar Sesión</a>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <main>
+        <h1>Inventario Kronos</h1><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sapiente cumque dicta animi explicabo sequi. Ex amet et, dolor eligendi commodi consectetur quo voluptatibus, cum nemo porro veniam at blanditiis?</p> <br>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci beatae impedit quia, deleniti quasi sequi iusto exercitationem nihil nulla, laboriosam dolore corrupti fuga officiis? Odit a mollitia id magnam amet delectus quia blanditiis reprehenderit explicabo eveniet! Rem voluptatum explicabo ipsum quae, dolorum, laudantium doloribus a, illum saepe sapiente accusantium dicta reiciendis? Amet iure porro voluptatum error fugit odit voluptas?</p>
+    </main>
+
+    <div class="container my-4">
+        <div class="row">
+            <table id="example" class="table table-striped" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Contraseña</th>
+                    </tr>
+                </thead>
+                <tbody id="usuarios">
+        
+            </table>
+    </div>
+    </div>
+
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--datatable-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+
+    <!--fontwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
